@@ -1,0 +1,16 @@
+:root {
+  --bg-secondary: oklch(71.91% 0.311 338.29 / 56.9%);
+  --cl-accent: #637117;
+  --cl-button: red;
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    oklch(71.5% 0.166 13.11),
+    oklch(69.4% 0.199 351.68)
+  );
+  padding: 4rem 0;
+  position: relative;
+}

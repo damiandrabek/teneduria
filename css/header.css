@@ -1,0 +1,27 @@
+.main-nav {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0);
+}
+
+.main-nav .menu {
+  font-size: clamp(1.35rem, 6vw, 2.75rem);
+  line-height: 1;
+
+  display: flex;
+  
+  gap: clamp(0.85rem, 4vw, 2rem);
+}
+
+/* .main-nav li:first-of-type {
+  margin-left: auto;;
+} */
+
+.main-nav a {
+  display: block;
+  padding-top: 0.35rem;
+}
+
+.main-nav .logo {
+  font-family: "Playfair Display", serif;
+}
