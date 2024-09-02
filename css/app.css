@@ -1,16 +1,27 @@
 :root {
   --bg-secondary: oklch(71.91% 0.311 338.29 / 56.9%);
-  --cl-accent: #637117;
+  --cl-accent: oklch(99.7% 0 114.84);
   --cl-button: red;
+}
+
+body {
+  color: var(--cl-accent)
 }
 
 main {
   min-height: 100vh;
+
   background-image: linear-gradient(
-    to right,
+    to bottom,
     oklch(71.5% 0.166 13.11),
     oklch(69.4% 0.199 351.68)
   );
+
   padding: 4rem 0;
-  position: relative;
+}
+
+h1 {
+ color: oklch(83.02% 0.187 159.49); 
+ font-size: 3rem;
+ font-weight: bold;
 }

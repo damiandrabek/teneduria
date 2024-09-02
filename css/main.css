@@ -1,0 +1,7 @@
+section.hero {
+  margin: 0 6rem;
+
+  display: grid;
+
+  grid-template-columns: min-content;
+}
