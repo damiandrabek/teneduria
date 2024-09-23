@@ -1,8 +1,7 @@
-:root {
-  --unimportant-text: rgba(255, 255, 255, 0.65);
-}
-
 section.hero {
+  width: 100%;
+  height: 38.5rem;
+
   padding: 2rem clamp(2rem, 15vw, 45rem);
 
   background: var(--bg-primary);
@@ -44,7 +43,7 @@ section.hero {
     letter-spacing: 0.12em;
 
     .hero-client-imgs {
-      margin: 1rem 0;
+      margin: 1.5rem 0;
 
       display: flex;
       flex-direction: row;

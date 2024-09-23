@@ -23,11 +23,14 @@ nav {
   }
 
   a {
-    color: oklch(94.12% 0.039 296.33);
+    color: oklch(94.12% 0.039 296.33 / 90%);
 
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     line-height: 2;
+  }
+  a:hover {
+    color: white;
   }
 
   .logo {
