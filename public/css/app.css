@@ -1,13 +1,13 @@
 :root {
   --bg-primary: oklch(22.59% 0.15643377085613766 264.0539924365888);
-  --bg-secondary: oklch(85.45% 0 0);
+  --bg-secondary: oklch(97.02% 0 0);
   --cl-gold-accent: oklch(88.68% 0.182 95.33);
   --cl-black-accent: oklch(27.8% 0.005 286.04);
   --cl-button: red;
 }
 
 body {
-  color: var(--cl-accent)
+  color: var(--bg-primary);
 }
 
 h1 {

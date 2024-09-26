@@ -37,9 +37,7 @@ nav {
     font-family: "Playfair Display", serif;
     font-weight: 700;
     font-size: clamp(1.35rem, 4vw, 2.5rem);
-  }
 
-  .logo:first-child {
-    align-self: flex-start;
+    color: oklch(94.12% 0.039 296.33 / 95%)
   }
 }
