@@ -70,6 +70,8 @@ section.hero {
   }
 }
 
+
+
 section.services {
   width: 100%;
   height: auto;
@@ -108,6 +110,30 @@ section.services {
       display: flex;
       flex-direction: column;
 
+      .service-icon {
+        max-width: 3.75rem;
+        height: auto;
+
+        padding: .25rem .75rem;
+
+        
+
+        border-radius: .85rem;
+
+        display: flex;
+        align-items: center;
+
+        img {
+          align-self: center;
+          max-width: 2rem;
+        }
+      }
+
+      .service-icon-with-background {
+        background: var(--bg-primary);
+      }
+      
+
       h3 {
         text-align: left;
 
@@ -118,10 +144,16 @@ section.services {
         line-height: 1.3;
       }
     }
+<<<<<<< HEAD
     .service:nth-child(2){
       background: oklch(24.12% 0.148 264.0539924365888);
 
       color: white;
+=======
+    
+    .service:nth-child(1) {
+      background: oklch(96.38% 0.043 92.66);
+>>>>>>> bdf466749648dfe93ac3b5e30319f73c8ca19580
     }
   }
 }
