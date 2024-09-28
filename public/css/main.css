@@ -52,7 +52,7 @@ section.hero {
 
 
       li img {
-        max-width: 4rem;
+        max-width: 3rem;
       }
     }
   }
@@ -117,6 +117,11 @@ section.services {
         font-size: 1.5rem;
         line-height: 1.3;
       }
+    }
+    .service:nth-child(2){
+      background: oklch(24.12% 0.148 264.0539924365888);
+
+      color: white;
     }
   }
 }
