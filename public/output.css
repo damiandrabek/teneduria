@@ -604,11 +604,6 @@ video {
   border-radius: 1.5rem;
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .pt-9 {
   padding-top: 2.25rem;
 }
