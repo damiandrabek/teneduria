@@ -1,0 +1,21 @@
+footer {
+  background: color-mix(
+    in lch, 
+    var(--bg-primary), 
+    black 35%
+    );
+
+  width: 100%;
+  padding: 2rem clamp(2rem, 15vw, 45rem);
+
+  display: flex;
+  flex-direction: column;
+
+  .main-footer-container {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}

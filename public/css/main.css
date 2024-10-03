@@ -1,9 +1,15 @@
+section:nth-child(odd){
+  background: var(--bg-primary);
+}
+section:nth-child(even){
+  background: white;
+}
+
 section.hero {
   height: clamp(20rem, 42.5vw, 40rem);
 
   padding: 2rem clamp(2rem, 15vw, 45rem);
 
-  background: var(--bg-primary);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
@@ -65,8 +71,8 @@ section.hero {
   .hero-img {
     grid-column: 2;
     grid-row: 1 / 4;
-    max-width: 100%;
-    height: clamp(25rem, 50vh, 80rem);
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -75,7 +81,6 @@ section.hero {
 section.services {
   width: 100%;
   height: auto;
-  background: white;
 
   margin: 4rem 0;
   padding: 0 clamp(2rem, 15vw, 45rem);
@@ -90,6 +95,7 @@ section.services {
     color: var(--bg-primary);
   }
 
+  
   .services-grid {
 
     display: grid;
@@ -189,7 +195,6 @@ section.services {
 }
 
 section.about {
-  background: var(--bg-primary);
 
   text-align: center;
 
@@ -198,6 +203,21 @@ section.about {
 
     font-size: 2.25rem;
     line-height: 3.25rem;
+    font-weight: 700;
+
     color: white;
+  }
+}
+
+section.contact {
+  text-align: center;
+  h2 {
+    padding-top: 2rem;
+
+    font-size: 2.25rem;
+    line-height: 3.25rem;
+    font-weight: 700;
+
+    color: var(--bg-primary);
   }
 }
