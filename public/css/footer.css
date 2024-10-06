@@ -5,17 +5,27 @@ footer {
     black 35%
     );
 
-  width: 100%;
-  padding: 2rem clamp(2rem, 15vw, 45rem);
+  padding-top: 2rem;
 
   display: flex;
   flex-direction: column;
 
   .main-footer-container {
-    width: 100%;
+    margin: 4rem clamp(10rem, 25vw, 40rem);
 
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     grid-template-rows: auto;
+  }
+
+  .footer-logo-address {
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    align-items: flex-start;
+
+    text-align: left;
   }
 }
