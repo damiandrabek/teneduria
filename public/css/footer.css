@@ -1,4 +1,6 @@
 footer {
+  color: white;
+
   background: color-mix(
     in lch, 
     var(--bg-primary), 
@@ -27,5 +29,26 @@ footer {
     align-items: flex-start;
 
     text-align: left;
+  }
+
+  .link-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+  }
+
+  .newsletter-container {
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap:.5rem;
+    }
   }
 }
