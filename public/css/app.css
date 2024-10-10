@@ -4,6 +4,10 @@
   --cl-gold-accent: oklch(88.68% 0.182 95.33);
   --cl-black-accent: oklch(27.8% 0.005 286.04);
   --cl-button: red;
+
+  --footer-accent: oklch(94.12% 0.039 296.33 / 50%);
+
+  --app-margin: 4rem clamp(10rem, 25vw, 40rem);
 }
 
 body {

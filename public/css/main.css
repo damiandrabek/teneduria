@@ -10,7 +10,7 @@ section.hero {
   align-items: center;
 
   .hero-container {
-    margin: 4rem clamp(10rem, 25vw, 40rem);
+    margin: var(--app-margin);
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -91,7 +91,7 @@ section.hero {
 
 section.services {
 
-  margin: 4rem clamp(10rem, 25vw, 40rem);
+  margin: var(--app-margin);
 
   display: flex;
   flex-direction: column;
