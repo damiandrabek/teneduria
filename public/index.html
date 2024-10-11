@@ -24,6 +24,8 @@
     @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     /* font - bebas neue */
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    /* font - montserrat */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
   </style>
 
   <script defer src="./script.js"></script>
@@ -37,12 +39,12 @@
 <body>
   <header>
     <nav>
-      <ul class="menu container">
+      <ul class="menu">
         <li><a href="#intro" class="logo">Teneduria</a></li>
         <li><a href="#sluzby">Služby</a></li>
         <li><a href="#onas">O nás</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-        <li><a href="mailto:someone@example.com"><img class="inline-block mr-2" src="./img/icons/mail-icon.svg" alt="mail icon">someone@example.com</a></li>
+        <li><a href="#kontakt">Kontakt</a></li> -->
+        <li class="mail-us"><a href="mailto:andrejkovic.jan@gmail.com"><img src="./img/icons/mail-icon.svg" alt="">Napíšte nám</a></li>
       </ul>
     </nav>
   </header>
@@ -97,6 +99,7 @@
       <div class="services-grid">
 
         <div class="service">
+
           <div class="service-header">
             <div class="service-icon">
               <img src="./img/icons/graph-icon.svg" alt="">
@@ -105,11 +108,14 @@
               &rarr;
             </a>
           </div>
+
           <h3>
-            Účtovníctvo
+            <a href="">
+              Účtovníctvo
+            </a>
           </h3>
           <p>
-            Získajte prehľadnosť a kontrolu financných dôchodkov a výdavkov. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Komplexné vedenie účtovných agend, vrátane spracovania faktúr, vedenia účtovných kníh a pravidelných finančných výkazov, aby ste mali aktuálny prehľad o financiách a súlade s legislatívou.
           </p>
         </div>
 
@@ -125,10 +131,12 @@
           </div>
 
           <h3>
-            Dane
+            <a href="">
+              Dane
+            </a>
           </h3>
           <p>
-            Získajte prehľadnosť a kontrolu financných dôchodkov a výdavkov. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Poskytujeme daňové poradenstvo a spracovanie daňových priznaní. Optimalizujeme daňovú záťaž a zabezpečujeme, aby boli vaše daňové povinnosti plne v súlade s platnými predpismi.
           </p>
         </div>
 
@@ -143,10 +151,12 @@
           </div>
           
           <h3>
-            Mzdy  
+            <a href="">
+              Mzdy
+            </a>  
           </h3>
           <p>
-            Získajte prehľadnosť a kontrolu financných dôchodkov a výdavkov. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Správa mzdovej agendy vrátane výpočtu miezd, odvodov a prípravy mzdových podkladov. Zabezpečíme, aby všetky mzdové procesy boli presné a včasné.
           </p>
         </div>
 
@@ -161,24 +171,104 @@
           </div>
           
           <h3>
-            Poradenstvo
+            <a href="">
+              Poradenstvo
+            </a>
           </h3>
           <p>
-            Získajte prehľadnosť a kontrolu financných dôchodkov a výdavkov. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Odborné poradenstvo v oblastiach účtovníctva, daní a financií. Pomáhame vám optimalizovať podnikanie a prijímať informované rozhodnutia pre úspešný rast.
           </p>
         </div>
     </section>
 
     <section id="onas" class="about">
-      <h2>
-        O nás
-      </h2>
+
+      <div class="about-container">
+
+        <h2>
+          O nás
+        </h2>
+
+        <div class="about-description-container">
+
+          <img src="./img/about-us-img.webp" alt="">
+
+          <div class="text-container">
+            
+            <p>
+              Vitajte v Tenedurii, mladom a dynamickom účtovníckom tíme, ktorý je poháňaný inováciami a úspechom našich klientov. 
+            </p>
+
+            <p>
+              Či už ste start-up, zavedená spoločnosť, alebo hľadáte osobné finančné poradenstvo, ponúkame 10 rokov skúseností a celý rad služieb od daňového plánovania a dodržiavania predpisov až po podnikové poradenstvo a finančné riadenie. 
+            </p>
+            <p>
+              Staňte sa naším partnerom na ceste k úspechu.
+            </p>
+
+          </div>
+
+      </div>
+      
+
+        
+
     </section>
 
     <section id="kontakt" class="contact">
       <h2>
         Kontakt
       </h2>
+
+      <div class="contact-container">
+
+        <div class="contact-icons">
+          <div>
+            <a href="https://maps.app.goo.gl/w5oArCQ2SY1RHZuw5" target="_blank">
+              <img src="./img/icons/map-icon.svg" alt="map-address">
+              <div>
+                <h4>Adresa</h4>
+                Na Pasienku 75A
+                <br>
+                900 25 Chorvátsky Grob
+              </div>
+            </a>
+            
+          </div>
+
+          <div>
+            <a href="tel: 0905413862">
+              <img src="./img/icons/phone-icon.svg" alt="phone">
+              <div> 
+                <h4>Tel. číslo</h4>
+                0905 413 862
+              </div>
+            </a>
+          </div>
+
+          <div>
+            <a href="mailto:andrejkovic.jan@gmail.com">
+              <img src="./img/icons/mail-icon.svg" alt="mail">
+              <div>
+                <h4>Email</h4>
+                andrejkovic.jan@gmail.com
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form action="">
+            <input type="text" placeholder="Vaše meno">
+            <input type="text" placeholder="Váš email">
+            <input type="text" placeholder="Tel. číslo">
+            <input type="text" placeholder="Firma">
+            <textarea placeholder="Váš text"></textarea>
+            <button type="submit">Odoslať</button>
+          </form>
+        </div>
+      </div>
+
     </section>
   </main>
     
@@ -195,20 +285,11 @@
       </div>
 
       <div class="link-container">
-        <a href="">lokeqwejnqw</a>
-        <a href="">sok</a>
-        <a href="">bok</a>
-        <a href="">dok</a>
+        <a href="#services">Služby</a>
+        <a href="#about">O nás</a>
+        <a href="#contact">Kontak</a>
       </div>
-
-      <div class="link-container">
-        <a href="">rit</a>
-        <a href="">titdnasdknsa</a>
-        <a href="">fit</a>
-        <a href="">zit</a>
-      </div>
-
-      <div class="newsletter-container">
+      <!-- <div class="newsletter-container">
         <h3>
           Prihláste sa na odber noviniek
         </h3>
@@ -217,7 +298,7 @@
           <input type="text" placeholder="Váš email">
           <button type="submit">Prihlásiť sa</button>
         </form>
-      </div>
+      </div> -->
 
     </div>
 
@@ -226,11 +307,11 @@
         &copy; 2024 Teneduria. Všetky práva vyhradené.
       </div>
       
-      <ul>
+      <!-- <ul>
         <li>linked in</li>
         <li>fb</li>
         <li>ig</li>
-      </ul>
+      </ul> -->
     </div>
       
   </footer>
