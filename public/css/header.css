@@ -12,10 +12,9 @@ nav {
     flex-direction: row;
 
     align-items: center;
-    justify-content: space-evenly;
     
     
-    gap: clamp(0.85rem, 4vw, 5.5rem);
+    gap: clamp(0.85rem, 3.5vw, 5.5rem);
 
     padding: 0.5rem;
 
