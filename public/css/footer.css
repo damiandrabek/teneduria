@@ -22,10 +22,7 @@ footer {
 
   .main-footer-container {
     max-width: var(--app-width);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: var(--app-margin-tb);
-    margin-bottom: var(--app-margin-tb);
+    margin: var(--app-margin-topbottom) auto;
 
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -75,8 +72,8 @@ footer {
 
   .copyright-social {
     color: oklch(94.12% 0.039 296.33 / 50%);
-
-    margin: var(--app-margin);
+    
+    margin: var(--app-margin-topbottom) auto;
 
     display: flex;
     gap: 1rem;

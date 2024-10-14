@@ -11,10 +11,7 @@ section.hero {
 
   .hero-container {
     max-width: var(--app-width);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: var(--app-margin-tb);
-    margin-bottom: var(--app-margin-tb);
+    margin: var(--app-margin-topbottom) auto;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -100,10 +97,7 @@ section.hero {
 section.services {
 
   max-width: var(--app-width);
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: var(--app-margin-tb);
-  margin-bottom: var(--app-margin-tb);
+  margin: var(--app-margin-topbottom) auto;
 
   display: flex;
   flex-direction: column;
@@ -229,10 +223,7 @@ section.about {
   .about-container {
     
     max-width: var(--app-width);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: var(--app-margin-tb);
-    margin-bottom: var(--app-margin-tb);
+    margin: var(--app-margin-topbottom) auto;
 
     padding: 4rem;
 
@@ -247,7 +238,6 @@ section.about {
     }
 
     .about-description-container {
-      
 
       display: flex;
       flex-direction: row;
@@ -287,10 +277,7 @@ section.contact {
 
   .contact-container {
     max-width: var(--app-width);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: var(--app-margin-tb);
-    margin-bottom: var(--app-margin-tb);
+    margin: var(--app-margin-topbottom) auto;
 
     display: flex;
     flex-direction: row;
