@@ -21,7 +21,11 @@ footer {
   }
 
   .main-footer-container {
-    margin: var(--app-margin);
+    max-width: var(--app-width);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: var(--app-margin-tb);
+    margin-bottom: var(--app-margin-tb);
 
     display: grid;
     grid-template-columns: 2fr 1fr;
