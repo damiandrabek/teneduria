@@ -251,7 +251,7 @@ section.about {
       }
 
       .text-container {
-        font-size: clamp(0.8rem, 1vw, 1.25rem);
+        font-size: clamp(0.8rem, 1.25vw, 1.25rem);
         line-height: 1.35;
 
         display: flex;
@@ -281,7 +281,7 @@ section.contact {
 
     display: flex;
     flex-direction: row;
-    gap: 4rem;
+    justify-content: space-evenly;
 
     .contact-icons {
       display: flex;
@@ -309,8 +309,6 @@ section.contact {
             font-weight: 500;
           }
       }
-
-      
     }
     .contact-form form {
       margin-left: 2rem;

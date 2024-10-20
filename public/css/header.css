@@ -15,6 +15,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     gap: clamp(0.85rem, 3.5vw, 5.5rem);
 
     li {
@@ -44,10 +45,7 @@ nav {
         font-weight: 500;
       }
     }
-
-    
   }
-
   a {
       color: oklch(94.12% 0.039 296.33 / 90%);
 
