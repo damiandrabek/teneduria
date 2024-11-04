@@ -35,6 +35,7 @@
   <script>
     seamless.polyfill();
   </script>
+  <script src="./script.js" defer></script>
 </head>
 <body>
   <header>
@@ -258,12 +259,13 @@
         </div>
 
         <div class="contact-form">
-          <form action="">
-            <input type="text" placeholder="Vaše meno">
-            <input type="text" placeholder="Váš email">
-            <input type="text" placeholder="Tel. číslo">
-            <input type="text" placeholder="Firma">
-            <textarea placeholder="Váš text"></textarea>
+          <form id="contact-form" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
+            <input required type="text" placeholder="Vaše meno" name="name">
+            <input required type="email" placeholder="Váš email" name="email">
+            <input required type="tel" placeholder="Tel. číslo" name="phone">
+            <input required type="text" placeholder="Firma" name="company">
+            <textarea required placeholder="Váš text"></textarea>
             <button type="submit">Odoslať</button>
           </form>
         </div>
