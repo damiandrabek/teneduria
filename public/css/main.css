@@ -78,8 +78,11 @@ section.hero {
     .hero-img {
       grid-column: 2;
       grid-row: 1 / 4;
+
       width: 100%;
       height: clamp(30rem, 60vh, 55rem);
+
+      border-radius: 3.75rem;
     }
   }
 }
@@ -327,12 +330,17 @@ section.contact {
 
         background: oklch(97.02% 0 0);
 
-        color: oklch(74.42% 0.0438 255.05);
+        color: oklch(49.41% 0.0438 255.05);
 
         font-size: 1.15rem;
         font-weight: 700;
 
         border-radius: 1.5rem;
+      }
+      input::placeholder,
+      textarea::placeholder,
+      button::placeholder {
+        color: oklch(74.42% 0.0438 255.05)
       }
 
       textarea {

@@ -1,8 +1,10 @@
-nav {
+header {
   width: 100%;
   background: var(--bg-primary);
 
-  padding-top: 0.5rem;
+  top: 0;
+  position: sticky;
+  z-index: 1000;
 
   .menu {
     max-width: var(--app-width);
@@ -10,7 +12,7 @@ nav {
 
     padding: 0.5rem;
 
-    font-size: clamp(1.15rem, 1.75vw, 1.75rem);
+    font-size: 1.5rem;
 
     display: flex;
     flex-direction: row;
@@ -32,7 +34,7 @@ nav {
         
         background: var(--cl-gold-accent);
 
-        padding: .85rem;
+        padding: .65rem;
 
         display: flex;
         flex-direction: row;
@@ -40,7 +42,7 @@ nav {
 
         border-radius: 1.15rem;
 
-        font-size: 1.85rem;
+        font-size: 1.75rem;
         font-family: "Montserrat";
         font-weight: 500;
       }
