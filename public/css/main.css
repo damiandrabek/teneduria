@@ -254,7 +254,7 @@ section.about {
       }
 
       .text-container {
-        font-size: clamp(0.8rem, 1.25vw, 1.25rem);
+        font-size: 1.1rem;
         line-height: 1.35;
 
         display: flex;
@@ -338,7 +338,8 @@ section.contact {
         border-radius: 1.5rem;
       }
       input::placeholder,
-      textarea::placeholder {
+      textarea::placeholder,
+      button::placeholder {
         color: oklch(74.42% 0.0438 255.05)
       }
 

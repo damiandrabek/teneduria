@@ -30,39 +30,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest/lib/bundle.min.js"></script>
   <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
-  <script>
-    seamless.polyfill();
-
-    document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('form[name="contact"]');
-
-    form.addEventListener('submit', async function(event) {
-        event.preventDefault(); // Prevent the default form submission
-
-        // Perform custom validation here if needed
-        const formData = new FormData(form);
-
-        try {
-            // Send form data to Netlify
-            const response = await fetch("/", {
-                method: "POST",
-                body: formData
-            });
-
-            if (response.ok) {
-                alert("Form submitted successfully!");
-                form.reset(); // Clear the form
-            } else {
-                alert("There was an issue with your submission.");
-            }
-        } catch (error) {
-            console.error("Form submission error:", error);
-            alert("An error occurred. Please try again.");
-        }
-    });
-});
-
-  </script>
   <script src="./script.js" defer></script>
 </head>
 <body>
