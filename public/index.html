@@ -184,7 +184,7 @@
 
         <div class="about-description-container">
 
-          <img src="./img/about-us-img.webp" alt="">
+          <img src="./img/about-img.jpg" alt="">
 
           <div class="text-container">
             
@@ -208,12 +208,12 @@
 
     </section>
 
-    <section class="contact">
+    <section class="contact"  id="kontakt">
       <h2>
         Kontakt
       </h2>
 
-      <div class="contact-container"  id="kontakt">
+      <div class="contact-container">
 
         <div class="contact-icons">
           <div>
@@ -249,18 +249,17 @@
             </a>
           </div>
         </div>
-
-        <div class="contact-form">
-          <form name="contact" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="contact">
-            <input required type="text" placeholder="Vaše meno" name="name">
-            <input required type="email" placeholder="Váš email" name="email">
-            <input required type="tel" placeholder="Tel. číslo" name="phone">
-            <input required type="text" placeholder="Firma" name="company">
-            <textarea required name="message" placeholder="Vaša správa"></textarea>
-            <button type="submit">Odoslať</button>
-          </form>
-        </div>
+        
+        <form class="contact-form" name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact">
+          <input required type="text" placeholder="Vaše meno" name="name">
+          <input required type="email" placeholder="Váš email" name="email">
+          <input required type="tel" placeholder="Tel. číslo" name="phone">
+          <input required type="text" placeholder="Firma" name="company">
+          <textarea required name="message" placeholder="Vaša správa"></textarea>
+          <button type="submit">Odoslať</button>
+        </form>
+        
       </div>
 
     </section>

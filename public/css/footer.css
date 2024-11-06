@@ -16,7 +16,8 @@ footer {
     color: oklch(94.12% 0.039 296.33 / 90%);
   }
 
-  a:hover {
+  a:hover,
+  a:active {
     color: white;
   }
 
