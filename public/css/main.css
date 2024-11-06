@@ -88,7 +88,7 @@ section.hero {
 }
   
 
-@media (any-hover: none) {
+@media (hover: none) and (pointer: coarse) {
     section.hero {
       display: flex;
       flex-direction: column;
@@ -210,7 +210,7 @@ section.services {
     }
   }
 
-  @media (any-hover: none) {
+  @media (hover: none) and (pointer: coarse) {
     .services-grid {
       display: flex;
       flex-direction: column;
@@ -268,14 +268,14 @@ section.about {
         gap: 4rem;
       }
     }
-    @media (any-hover: none) {
+    @media (hover: none) and (pointer: coarse) {
       .about-description-container {
         display: flex;
         flex-direction: column;
       }
     }
   }
-  @media (any-hover: none) {
+  @media (hover: none) and (pointer: coarse) {
     margin: 0 2rem;
   }
 }
@@ -294,6 +294,7 @@ section.contact {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    gap: 6rem;
 
     .contact-icons {
       display: flex;
@@ -379,11 +380,13 @@ section.contact {
     }
   }
 
-  @media (any-hover: none) {
+  @media (hover: none) and (pointer: coarse) {
     .contact-container {
-      margin: 2rem;
+      margin: 4rem auto;
 
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
       gap: 2rem;
 
       .contact-icons {

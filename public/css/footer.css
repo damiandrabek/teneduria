@@ -7,6 +7,8 @@ footer {
     black 35%
     );
 
+  
+  
   padding: 1rem 0;
 
   display: flex;
@@ -22,7 +24,7 @@ footer {
   }
 
   .main-footer-container {
-    width: var(--app-width);
+    max-width: var(--app-width);
     margin: var(--app-margin-topbottom) auto;
 
     display: flex;
@@ -58,7 +60,7 @@ footer {
   .copyright {
     color: oklch(94.12% 0.039 296.33 / 50%);
 
-    width: var(--app-width);
+    max-width: var(--app-width);
     
     margin: var(--app-margin-topbottom) auto;
 
