@@ -29,7 +29,8 @@ footer {
 
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    gap: 15rem;
 
     .footer-logo-address {
       color: white;
