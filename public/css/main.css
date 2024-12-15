@@ -72,7 +72,7 @@ section.hero {
 
 
           li img {
-            max-width: 3rem;
+            width: 8rem;
           }
         }
         .hero-client-imgs::before {
@@ -146,6 +146,10 @@ section.services {
       display: flex;
       flex-direction: column;
 
+      button {
+        color: var(--bg-primary);
+      }
+
       .service-header {
 
         width: 100%;
@@ -210,10 +214,10 @@ section.services {
         font-size: 1.5rem;
         line-height: 1.3;
 
-        a {
+        button {
           position: relative;
         }
-        a::after{
+        button::after{
           content: '';
           background: var(--bg-primary);
           border-radius: 1rem;
@@ -225,12 +229,12 @@ section.services {
           transition: width 200ms ease;
         }
         
-        a:hover::after,
-        a:active::after {
+        button:hover::after,
+        button:active::after {
           width: 100%;
         }
       }
-      h3.service-title.color-inverse a::after {
+      h3.service-title.color-inverse button::after {
           background: white;
         }
 
@@ -241,6 +245,9 @@ section.services {
     .service:nth-child(1){
       background: oklch(24.12% 0.148 264.0539924365888);
       color: white;
+      button {
+        color: white;
+      }
     }
     .service:nth-child(4){
       background: oklch(96.38% 0.043 92.66);
