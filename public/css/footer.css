@@ -41,6 +41,14 @@ footer {
       align-items: flex-start;
 
       text-align: left;
+      
+      a {
+        transition: 150ms ease;
+      }
+      a:hover,
+      a::active {
+        color: white;
+      }
     }
 
     .link-container {
@@ -48,6 +56,14 @@ footer {
       flex-direction: column;
       gap: 1rem;
       text-align: left;
+
+      a {
+        transition: 150ms ease;
+      }
+      a:hover,
+      a::active {
+        color: white;
+      }
     }
   }
   @media (any-hover: none) {

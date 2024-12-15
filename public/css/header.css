@@ -31,8 +31,9 @@ header {
         }
 
         color: var(--bg-primary);
-        
         background: var(--cl-gold-accent);
+
+        transition: background 200ms ease-in;
 
         padding: .15rem .75rem;
 
@@ -45,6 +46,10 @@ header {
         font-size: 1.5rem;
         font-family: "Montserrat";
         font-weight: 500;
+      }
+      a:hover,
+      a:active {
+        background: oklch(94.71% 0.0666 95.33);
       }
     }
   }
@@ -60,16 +65,18 @@ header {
  }
 
   a {
-      color: oklch(94.12% 0.039 296.33 / 95%);
+    color: oklch(94.12% 0.039 296.33 / 95%);
 
-      font-family: "Poppins", sans-serif;
-      font-weight: 300;
-      line-height: 2;
-    }
-    a:hover,
-    a:active {
-      color: white;
-    } 
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    line-height: 2;
+
+    transition: color 150ms ease;
+  }
+  a:hover,
+  a:active {
+    color: white;
+  } 
 
 }
 .logo {
