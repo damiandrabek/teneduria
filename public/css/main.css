@@ -492,4 +492,15 @@ section.contact {
       }
     }
   }
+
+  @media (hover: none) and (pointer: coarse) and (max-width: 1100px) {
+    .contact-container {
+      flex-direction: column;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
 }

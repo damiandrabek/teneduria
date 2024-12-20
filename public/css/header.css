@@ -53,15 +53,20 @@ header {
       }
     }
   }
- @media (hover: none) and (pointer: coarse) {
-    li {
-      display: none;
-    }
-    li a.logo,
-    li mail-us {
-      display: block;
+  ul.menu.mobile-menu {
+    display: none;
+  }
 
-    }
+ @media (hover: none) and (pointer: coarse) and (max-width: 1100px) {
+  ul.menu {
+    display: none;
+  }
+  ul.menu.mobile-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
  }
 
   a {
