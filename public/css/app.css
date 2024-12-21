@@ -21,3 +21,11 @@ h1 {
  font-size: 3rem;
  font-weight: bold;
 }
+
+.logo {
+  font-family: "Playfair Display";
+  font-weight: 800;
+  font-size: 2.65rem;
+
+  color: oklch(94.12% 0.039 296.33 / 100%)
+}

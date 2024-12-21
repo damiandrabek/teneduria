@@ -20,11 +20,34 @@ header {
     justify-content: space-between;
     gap: 3.5rem;
 
-    li {
-      padding: 0.15rem;
+    a {
+      padding: .25rem;
+
+      color: oklch(94.12% 0.039 296.33 / 95%);
+
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      line-height: 2;
+
+      transition: color 150ms ease;
+    }
+    a:hover,
+    a:active {
+      color: white;
     }
 
-    li.headerLinkUnderline {
+    a.logo {
+      font-family: "Playfair Display", serif;
+      font-weight: 800;
+      font-size: 2.65rem;
+
+      color: oklch(94.12% 0.039 296.33 / 100%)
+    }
+    
+
+    a.header-link-hover {
+      font-weight: 400;
+      transition: font-weight 150ms ease;
       position: relative;
 
       &:after {
@@ -50,44 +73,48 @@ header {
       }
     }
     
-    li.mail-us {
-      a {
-        img {
-          max-width: 3rem;
-        }
-
-        color: var(--bg-primary);
-        background: var(--cl-gold-accent);
-
-        transition: background 200ms ease-in;
-
-        padding: .15rem .75rem;
-
-        display: flex;
-        flex-direction: row;
-        gap: .75rem;
-
-        border-radius: 1.15rem;
-
-        font-size: 1.5rem;
-        font-family: "Montserrat";
-        font-weight: 500;
+    a.header-link-hover:hover,
+    a.header-link-hover:active {
+      font-weight: 500;
+    }
+    
+    a.mail-us {
+      img {
+        max-width: 3rem;
       }
-      a:hover,
-      a:active {
-        background: oklch(94.71% 0.0666 95.33);
-      }
+
+      color: var(--bg-primary);
+      background: var(--cl-gold-accent);
+
+      transition: background 200ms ease-in;
+
+      padding: .15rem .75rem;
+
+      display: flex;
+      flex-direction: row;
+      gap: .75rem;
+
+      border-radius: 1.15rem;
+
+      font-size: 1.5rem;
+      font-family: "Montserrat";
+      font-weight: 500;
+    }
+    a.mail-us:hover,
+    a.mail-us:active {
+      background: oklch(94.71% 0.0666 95.33);
     }
   }
-  ul.menu.mobile-menu {
+
+  div.menu.mobile-menu {
     display: none;
   }
 
  @media (hover: none) and (pointer: coarse) and (max-width: 1100px) {
-  ul.menu {
+  div.menu {
     display: none;
   }
-  ul.menu.mobile-menu {
+  div.menu.mobile-menu {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -95,25 +122,7 @@ header {
   }
  }
 
-  a {
-    color: oklch(94.12% 0.039 296.33 / 95%);
-
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    line-height: 2;
-
-    transition: color 150ms ease;
-  }
-  a:hover,
-  a:active {
-    color: white;
-  } 
+   
 
 }
-.logo {
-  font-family: "Playfair Display", serif;
-  font-weight: 800;
-  font-size: 2.65rem;
 
-  color: oklch(94.12% 0.039 296.33 / 100%)
-}

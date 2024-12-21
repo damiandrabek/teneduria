@@ -72,7 +72,13 @@ section.hero {
 
 
           li img {
-            width: 8rem;
+            width: 9rem;
+          }
+          li:nth-child(2) img {
+            width: 10rem;
+          }
+          li:nth-child(3) img {
+            width: 6.5rem;
           }
         }
         .hero-client-imgs::before {
@@ -307,6 +313,8 @@ section.about {
       }
 
       .text-container {
+        text-align: justify;
+
         font-size: 1.175rem;
         line-height: 1.55;
 
