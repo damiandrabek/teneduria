@@ -41,7 +41,12 @@ header {
       font-weight: 800;
       font-size: 2.65rem;
 
-      color: oklch(94.12% 0.039 296.33 / 100%)
+      color: oklch(94.12% 0.039 296.33 / 100%);
+      transition: color 150ms ease;
+    }
+    a.logo:hover,
+    a.logo:active {
+      color: white;
     }
     
 
@@ -71,11 +76,6 @@ header {
       &:hover:after {
         transform: scaleX(1);
       }
-    }
-    
-    a.header-link-hover:hover,
-    a.header-link-hover:active {
-      font-weight: 500;
     }
     
     a.mail-us {
@@ -121,8 +121,5 @@ header {
     justify-content: space-around;
   }
  }
-
-   
-
 }
 
