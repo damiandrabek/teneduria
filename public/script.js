@@ -28,4 +28,26 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log("An error occurred. Please try again.");
     }
   });
+
+  const menuIcon = document.getElementById("menu-icon");
+  const navModal = document.getElementById("nav-modal");
+  const closeBtn = document.getElementById("close-btn");
+  console.log(menuIcon, navModal, closeBtn)
+
+  // Open the modal when the menu icon is clicked
+  menuIcon.addEventListener("click", function () {
+    navModal.style.width = "100%";
+  });
+
+  // Close the modal when the close button is clicked
+  closeBtn.addEventListener("click", function () {
+    navModal.style.width = "0";
+  });
+
+  // Close the modal when clicking outside the nav-content
+  navModal.addEventListener("click", function (event) {
+    if (event.target === navModal) {
+      navModal.style.width = "0";
+    }
+  });
 });

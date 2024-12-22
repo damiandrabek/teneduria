@@ -78,7 +78,7 @@ header {
       }
     }
     
-    a.mail-us {
+    a.contact-us {
       img {
         max-width: 3rem;
       }
@@ -100,8 +100,8 @@ header {
       font-family: "Montserrat";
       font-weight: 500;
     }
-    a.mail-us:hover,
-    a.mail-us:active {
+    a.contact-us:hover,
+    a.contact-us:active {
       background: oklch(94.71% 0.0666 95.33);
     }
   }
@@ -121,5 +121,74 @@ header {
     justify-content: space-around;
   }
  }
+
+ /* Hamburger Icon */
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+/* Navigation Modal */
+.nav-modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  overflow-x: hidden;
+  transition: width 0.3s ease;
+}
+
+/* Modal Content */
+.nav-content {
+  background-color: #fff;
+  height: 100%;
+  width: 66.666%; /* Two-thirds of the screen */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  padding-top: 4rem;
+  position: relative;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Navigation Links */
+.nav-content nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-content nav ul li {
+  padding: 1rem 1.25rem;
+}
+
+.nav-content nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  display: block;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 1100px) {
+  .nav-modal {
+    display: none !important;
+  }
+}
+
+
 }
 
