@@ -123,17 +123,17 @@ header {
  }
 
  /* Hamburger Icon */
-.menu-icon {
-  font-size: 30px;
+.hamburger {
+  font-size: 2rem;
   cursor: pointer;
-  display: block;
+  /* display: block;
   position: absolute;
   top: 1rem;
-  right: 1rem;
+  right: 1rem; */
 }
 
 /* Navigation Modal */
-.nav-modal {
+.modal {
   display: none; /* Hidden by default */
   position: fixed;
   z-index: 1000;
