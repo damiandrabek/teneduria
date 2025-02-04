@@ -559,7 +559,7 @@ figure {
 
 input, 
 button {
-  all: unset;
+  /* all: unset; */
   color: black;
   font-size: inherit;
   font-family: inherit;

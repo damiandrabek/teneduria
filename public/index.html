@@ -36,32 +36,17 @@
 </head>
 <body>
   <header>
+      <input type="checkbox" id="sidebar-active">
+      <label for="sidebar-active" class="open-sidebar-button">&#9776;</label>
+
+      <label id="overlay" for="sidebar-active"></label>
       <div class="menu">
+        <label for="sidebar-active" class="close-sidebar-button">&#10005;</label>
         <a class="logo" href="#intro">Teneduria</a>
         <a class="header-link-hover" href="#sluzby">Služby</a>
         <a class="header-link-hover" href="#onas">O nás</a>
         <a class="contact-us" href="#kontakt">Kontaktujte nás</a>
       </div>
-
-      <!-- mobile version -->
-       <!-- hambuger icon -->
-      <div class="menu mobile-menu">
-        <a href="#intro" class="logo">Teneduria</a>
-        <div id="hambuger" class="hamburger">&#9776;</>
-      </div>
-      <!-- nav modal -->
-      <div id="modal" class="modal">
-        <div class="modal-content">
-          <span id="close-btn" class="close-btn">&times;</span>
-          <ul class="modal-nav">
-            <li><a href="#intro" class="logo">Teneduria</a></li>
-            <li><a href="#sluzby" class="header-link-hover">Služby</a></li>
-            <li><a href="#onas" class="header-link-hover">O nás</a></li>
-            <li><a href="#kontakt" class="header-link-hover">Kontaktujte nás</a></li>
-          </ul>
-        </div>
-      </div>
-
 
   </header>
 
