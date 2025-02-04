@@ -122,6 +122,10 @@ header {
     display: none;
   }
 
+  #overlay {
+    display: none;
+  }
+
  @media (hover: none) and (pointer: coarse) and (max-width: 1100px) {
 
   div.menu {
