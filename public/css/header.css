@@ -22,7 +22,7 @@ header {
     a:hover,
     a:active {
       color: white;
-    }
+  }
   label {
     padding-top: 2rem;
     font-size: 2rem;
@@ -123,7 +123,8 @@ header {
   }
 
   #overlay {
-    display: none;
+    position: fixed;
+    width: 0;
   }
 
  @media (hover: none) and (pointer: coarse) and (max-width: 1100px) {
