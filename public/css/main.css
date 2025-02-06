@@ -80,7 +80,9 @@ section.hero {
           align-items: center;
           justify-content: space-evenly;
 
-
+          li {
+            padding: 2rem 1rem;
+          }
           li img {
             width: 9rem;
           }
@@ -285,7 +287,7 @@ section.services {
       .service-description {
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.35s ease-out;
+        transition: max-height 0.5s ease-out;
       }
       .expanded-desc {
         max-height: 100%;
