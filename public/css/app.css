@@ -49,30 +49,3 @@ body {
   animation: spinOut .35s ease-out forwards;
   animation-iteration-count: 1;
 }
-
-@keyframes expandIn {
-  from {
-    max-height: 100%;
-  }
-  to {
-    max-height: 0;
-  }
-}
-@keyframes expandOut {
-  from {
-    max-height: 0;
-  }
-  to {
-    max-height: 100%;
-  }
-}
-
-.expandDescIn {
-  animation: expandIn .35s ease-out forwards;
-  animation-iteration-count: 1;
-}
-
-.expandDescOut {
-  animation: expandOut .35s ease-out forwards;
-  animation-iteration-count: 1;
-}

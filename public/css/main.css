@@ -285,11 +285,11 @@ section.services {
       .service-description {
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+        transition: max-height 0.35s ease-out;
       }
-      /* .expanded-desc {
+      .expanded-desc {
         max-height: 100%;
-      } */
+      }
     }
 
     .service:hover h3.service-title::after,

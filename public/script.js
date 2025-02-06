@@ -33,16 +33,12 @@ const toggleExpand = (button) => {
   const targetId = button.getAttribute("data-target");
   const desc = document.getElementById(targetId);
 
-  if (desc.classList.contains("expandDescOut")) {
-    desc.classList.remove("expandDescOut");
-    desc.classList.add("expandDescIn");
-
-    button.classList.remove("rotateIn");
+  if (desc.classList.contains("expanded-desc")) {
+    desc.classList.remove("expanded-desc");
+    button.classList.remove("rotateIn")
     button.classList.add("rotateOut");
   } else {
-    desc.classList.remove("expandDescIn");
-    desc.classList.add("expandDescOut");
-
+    desc.classList.add("expanded-desc");
     button.classList.remove("rotateOut");
     button.classList.add("rotateIn");
   }
