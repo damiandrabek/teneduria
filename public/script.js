@@ -34,11 +34,27 @@ const toggleExpand = (button) => {
   const desc = document.getElementById(targetId);
 
   if (desc.classList.contains("expanded-desc")) {
+
+    desc.style.height = desc.scrollHeight + "px";
+    desc.offsetHeight;
+    desc.style.height = "0";
     desc.classList.remove("expanded-desc");
+
     button.classList.remove("rotateIn")
     button.classList.add("rotateOut");
+
   } else {
+
+    desc.style.height = desc.scrollHeight + "px";
     desc.classList.add("expanded-desc");
+
+    desc.addEventListener("transitionend", function handler(e) {
+      if (e.propertyName === "height") {
+        desc.style.height = "auto";
+        desc.removeEventListener("transitionend", handler);
+      }
+    })
+
     button.classList.remove("rotateOut");
     button.classList.add("rotateIn");
   }
