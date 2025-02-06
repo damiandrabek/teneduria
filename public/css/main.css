@@ -180,7 +180,6 @@ section.services {
 
     .service {
       padding: 2rem;
-      padding-bottom: 4rem;
 
       background: var(--bg-secondary);
 
@@ -253,16 +252,18 @@ section.services {
       h3.service-title {
         text-align: left;
 
-        margin: 0.75rem 0 ;
+        margin: 0.75rem 0;
+        padding: .2rem;
+
+        width: fit-content;
 
         font-weight: 500;
         font-size: 1.5rem;
         line-height: 1.3;
 
-        button {
-          position: relative;
-        }
-        button::after{
+        position: relative;
+      }
+      h3.service-title::after{
           content: '';
           background: var(--bg-primary);
           border-radius: 1rem;
@@ -273,20 +274,30 @@ section.services {
           left: 0;
           transition: width 200ms ease;
         }
-        
-        button:hover::after,
-        button:active::after {
-          width: 100%;
-        }
-      }
-      h3.service-title.color-inverse button::after {
+      h3.service-title.color-inverse::after {
           background: white;
         }
 
       p {
         line-height: 1.5;
       }
+
+      .service-description {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+      }
+      /* .expanded-desc {
+        max-height: 100%;
+      } */
     }
+
+    .service:hover h3.service-title::after,
+    .service:active h3.service-title::after {
+        width: 100%;
+    }
+
+
     .service:nth-child(1){
       background: oklch(24.12% 0.148 264.0539924365888);
       color: white;
@@ -390,7 +401,6 @@ section.about {
 section.contact {
   text-align: center;
   h2 {
-    padding-top: 2rem;
     color: var(--bg-primary);
   }
 

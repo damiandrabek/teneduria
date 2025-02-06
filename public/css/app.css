@@ -24,3 +24,55 @@ body {
 
   color: oklch(94.12% 0.039 296.33 / 100%)
 }
+
+@keyframes spinIn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-180deg);
+  }
+}
+@keyframes spinOut {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.rotateIn {
+  animation: spinIn .35s ease-out forwards;
+  animation-iteration-count: 1;
+}
+.rotateOut {
+  animation: spinOut .35s ease-out forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes expandIn {
+  from {
+    max-height: 100%;
+  }
+  to {
+    max-height: 0;
+  }
+}
+@keyframes expandOut {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 100%;
+  }
+}
+
+.expandDescIn {
+  animation: expandIn .35s ease-out forwards;
+  animation-iteration-count: 1;
+}
+
+.expandDescOut {
+  animation: expandOut .35s ease-out forwards;
+  animation-iteration-count: 1;
+}

@@ -108,17 +108,15 @@
             <div class="service-icon">
               <img src="./img/icons/graph-icon.svg" alt="">
             </div>
-            <button class="service-button">
+            <button class="service-button " onclick="toggleExpand(this)" data-target="desc1">
               &darr;
             </button>
           </div>
 
           <h3 class="service-title color-inverse">
-            <button>
-              Účtovníctvo
-            </button>
+            Účtovníctvo
           </h3>
-          <p>
+          <p id="desc1" class="service-description">
             Komplexné vedenie účtovných agend, vrátane spracovania faktúr, vedenia účtovných kníh a pravidelných finančných výkazov, aby ste mali aktuálny prehľad o financiách a súlade s legislatívou.
           </p>
         </div>
@@ -129,17 +127,15 @@
             <div class="service-icon">
               <img src="./img/icons/piggy-bank-icon.svg" alt="">
             </div>
-            <button class="service-button">
+            <button class="service-button" onclick="toggleExpand(this)" data-target="desc2">
               &darr;
             </button>
           </div>
 
           <h3 class="service-title">
-            <button>
-              Dane
-            </button>
+            Dane
           </h3>
-          <p>
+          <p id="desc2" class="service-description">
             Poskytujeme daňové poradenstvo a spracovanie daňových priznaní. Optimalizujeme daňovú záťaž a zabezpečujeme, aby boli vaše daňové povinnosti plne v súlade s platnými predpismi.
           </p>
         </div>
@@ -149,17 +145,15 @@
             <div class="service-icon">
               <img src="./img/icons/calculator-icon.svg" alt="">
             </div>
-            <button class="service-button">
+            <button class="service-button" onclick="toggleExpand(this)" data-target="desc3">
               &darr;
             </button>
           </div>
           
           <h3 class="service-title">
-            <button>
-              Mzdy
-            </button>  
+            Mzdy
           </h3>
-          <p>
+          <p id="desc3" class="service-description">
             Správa mzdovej agendy vrátane výpočtu miezd, odvodov a prípravy mzdových podkladov. Zabezpečíme, aby všetky mzdové procesy boli presné a včasné.
           </p>
         </div>
@@ -169,17 +163,15 @@
             <div class="service-icon service-icon-with-background">
               <img src="./img/icons/euro-icon.svg" alt="">
             </div>
-            <button class="service-button">
+            <button class="service-button" onclick="toggleExpand(this)" data-target="desc4">
               &darr;
             </button>
           </div>
           
           <h3 class="service-title">
-            <button>
-              Poradenstvo
-            </button>
+            Poradenstvo
           </h3>
-          <p>
+          <p id="desc4" class="service-description">
             Odborné poradenstvo v oblastiach účtovníctva, daní a financií. Pomáhame vám optimalizovať podnikanie a prijímať informované rozhodnutia pre úspešný rast.
           </p>
         </div>
@@ -215,8 +207,8 @@
       </div>
     </section>
 
-    <section class="contact"  id="kontakt">
-      <h2>
+    <section class="contact">
+      <h2 id="kontakt">
         Kontakt
       </h2>
 
