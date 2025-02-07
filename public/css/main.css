@@ -147,10 +147,13 @@ section.hero {
           .hero-client-imgs {
             justify-content: space-evenly;
             gap: 2rem;
+
+            li {
+              padding: 1rem 0;
+            }
           }
         }
       }
-
       .hero-img {
         display: none;
       }
@@ -229,7 +232,6 @@ section.services {
             max-height: 1.75rem;
           }
         }
-
         .service-button {
           color: black;
           background: white;
